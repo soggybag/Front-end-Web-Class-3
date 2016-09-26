@@ -46,11 +46,30 @@ Using document.getElementById()
 
 ### 4 - Build a simple program tip calculator
 
-### 5 - JavaScript is weird with Strings and Numbers
+### 5 - JavaScript is the wild west when it comes to types
 
-Concatenate strings with the +. There is only one type of number. When combining numbers and strings with + it’s all string: 2 + “2” = “22”. 
+Here is what the internet says: 
 
-Oh yeah and there are a few weird situations with =, ==, and +. Talk more about these later. 
+> There are just six types in JavaScript: Object, Number, String, Boolean, Null, and Undefined. Objects include arrays,
+> functions, and ordinary objects. Numbers may be integers or floating point or the special values NaN and Infinity . 
+> Strings include the empty string, "" .
+
+You can assign any type to any variable, no matter what the previouse type was. 
+
+#### - JavaScript is weird with Strings and Numbers
+
+Concatenate strings with the +. There is only one type of number. When combining numbers and strings with + it’s all 
+string: 2 + “2” = “22”. 
+
+Due to complicated computer relted mathiness decimal values in JS can sometimes come up with unexpected values. 
+For example: 
+
+`6.6 / 0.1 = 65.99999999999999`
+
+Oh yeah and there are a few weird situations with =, ==, and +. Talk more about these later.
+
+Is this good or bad? Depends on your perspective. At the end of the day it is what it is. Give in to JavaScript's loose 
+typing it's fun and easy. On occasion you'll end up with odd errors, but other languages all have their own foibles. 
 
 ## Projects and Challenges
 
