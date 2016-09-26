@@ -31,18 +31,27 @@ JavaScript is most often used as a language that scripts the browser. As such it
 - Is not compiled
 - Limited by what the browser 
 
-Where does JavaScript live? You can write JavaScript in the <script> tag within an HTML page. Or, you can write JavaScript in external files using the .js extension and link to these files with the <script src=”file.js”> tag. 
+Where does JavaScript live? You can write JavaScript in the `<script>` tag within an HTML page. Or, you can write 
+JavaScript in external files using the .js extension and link to these files with the `<script src="file.js">` tag. 
 
 ### 2 - JavaScript in Action Demo
 
 - JavaScript basic syntax
 - Using the console and console.log(). 
 
-Example 1
+#### Demo - console
+
+`console.log("Hello World")`
 
 ### 3 - The DOM and ids
 
-Using document.getElementById()
+Use the id attribute to identify tags for JavaScript. Id names should be unique and only appear __once per page__. 
+
+As a general rule of thumb always use class names for CSS, and id names for JavaScript. 
+
+#### Demo - Using document.getElementById()
+
+`document.getElementById("name")`
 
 ### 4 - Build a simple program tip calculator
 
