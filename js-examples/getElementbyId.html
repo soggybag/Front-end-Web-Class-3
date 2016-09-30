@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        
+        <h1 id="timer-display"></h1>
+        
+        <button id="start-button">Start</button>
+        <button id="stop-button">Stop</button>
+        
+        <!-- The script tag should come after the elements -->
+        <script>
+            // Get a reference to an element 
+            // use id names for JS elements
+            
+            var timerDisplay = document.getElementById("timer-display");
+            var startButton = document.getElementById("start-button");
+            var stopButton = document.getElementById("stop-button");
+            
+            var timer;
+            var ms = 0
+            
+            // Set the content of an element with innerHTML
+            timerDisplay.innerHTML = "00:00";
+            
+            // Define a function
+            function runTimer(event){
+                timer = setInterval(function(){
+                    ms += 1;
+                    timerDisplay.innerHTML = ms;
+                }, 10);
+            }
+            
+            // Listen for click events on the stop button
+            startButton.addEventListener("click", runTimer);
+            
+            // Listen for click on the stop button
+            // This example uses a closure!
+            stopButton.addEventListener("click", function(event){
+                // Clear the interval, you must pass a reference to the timer.
+                clearInterval(timer);
+            });
+            
+            /* Challenges
+            
+            1) Click the start button two or times before clicking the stop button.
+            The timer will not stop. How to fix this?
+            
+            2) Format the timer display as 00:00
+            
+            3) Add a reset button. Should stop the timer, and reset the time to 0
+            
+            */
+        </script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
