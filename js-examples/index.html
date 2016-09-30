@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Class 3 Example 1</title>
+
+        <style>
+
+          #drawer-title {
+            cursor: pointer;
+          }
+
+          #drawer {
+            transition: 1s;
+          }
+
+          .hide {
+            opacity: 0;
+          }
+
+
+        </style>
+
+        <script>
+            console.log("hello World");
+
+            // Some of the things you need to know
+
+            // A comment
+            /* A block comment */
+
+            // A function
+            function myFunction() {
+                console.log("My Function test!");
+            }
+
+            // or
+            var calculate = function(a, b) {
+                var c = a * b;
+                return c;
+            }
+
+            // If statement
+            if (calculate(12, 3) % 2 == 0) {
+                console.log("12 * 3 is even");
+            }
+
+            // A for loop
+            for (var i = 0; i < 10; i++) {
+                console.log(calculate(i, i));
+            }
+
+            // An array
+            var myArray = [11,22,33];
+            // add items to an array
+
+
+        </script>
+    </head>
+    <body>
+        <h1 id="">Test</h1>
+
+        <!-- Timer -->
+        <h2 id="time"></h2>
+        <button id="timer-button">Start</button>
+
+       
+       
+       
+       
+       
+        <!-- Mini tip calculator -->
+        <p>Total:<input id="total" type="number"></p>
+        <p>Tip:<input id="tip" type="number"></p>
+        <p><span id="your-tip">0.0</span></p>
+        <p><button id="calculate-tip">Caclulate Tip</button></p>
+
+       
+       
+       
+       
+       
+        <!-- Add and remove class examples -->
+        <h1 id="drawer-title">Drawer</h1>
+        <p id="drawer">CSS is very powerful. Besides setting the appearance of
+        elements CSS has the power to animate elements. This example uses a
+        mechanism of adding and removing a class name to hide and show this
+        element.</p>
+
+       
+       
+       
+       
+        <!-- Show thing -->
+        <p>
+          <select id="fruit-select">
+            <option disabled selected value> -- select an option -- </option>
+            <option value="apple">Apple</option>
+            <option value="banana">Banana</option>
+            <option value="cantaloupe">Cantaloupe</option>
+          </select>
+        </p>
+
+        <style>
+        .fruit {
+          transition: 1s;
+          display: none;
+        }
+
+        .show {
+          display: block;
+        }
+
+        </style>
+
+        <p class="fruit" id="apple">The apple tree (Malus pumila, commonly and erroneously called Malus
+         domestica) is a deciduous tree in the rose family best known for its sweet, pomaceous fruit, the
+         apple.</p>
+        <p class="fruit" id="banana">The banana is an edible fruit, botanically a berry,[1][2] produced by
+         several kinds of large herbaceous flowering plants in the genus Musa.</p>
+        <p class="fruit" id="cantaloupe">Cantaloupe (also cantelope, cantaloup, muskmelon (India and the 
+        United States), mushmelon, rockmelon, sweet melon, Persian melon, or spanspek (South Africa)) refers 
+        to a variety of Cucumis melo, a species in the family Cucurbitaceae.</p>
+        
+        
+        <div>
+            <div id=""></div>
+        </div>
+
+        <!-- end HTML Comment -->
+        <!-- Better load this JS at the end of the document! -->
+        <script src="main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+
+<script>
+    // The following illustrates a few basic programming ideas in JS
+    
+    // Send a message to the console
+    console.log("Hello World");
+    
+    // Define some variables. 
+    var name = "Mitchell";
+    var score = 940000;
+    var highScore = 10000;
+    
+    // Concatenate variables and strings
+    console.log(name + " Your score is:" + score);
+    
+    // If else 
+    if (score > highScore) {
+        console.log(name + " now has the new high score!");
+    } else {
+        console.log(name + " did not beat the high score:" + highScore);
+    }
+    
+    // For loop
+    for (var i = 0; i < 10; i++) {
+        console.log(i);
+    }
+    
+    // Do some math
+    console.log(Math.PI);
+    console.log(Math.sqrt(99));
+    console.log(Math.ceil(9.99));
+    console.log(Math.floor(9.99));
+    console.log(Math.round(5.67));
+    
+    // JavaScript gets a little weird with numbers
+    console.log(2 + 2);     // Not so weird
+    console.log("2" + 2);   // Might be expected or not
+    console.log(2 * "2");   // Does this work?  
+    
+    for (var i = 0; i < 10; i += 0.1) {
+        console.log(i); // Should be 0.1, 0.2, 0.3, 0.4 etc. or not...
+    }
+    
+    // JS has a couple special values
+    var wtf;                // No value assigned!
+    console.log(wtf);       // wtf has no value
+    console.log(wtf * 3);   // wtf x 3 sure isn't a number
+    
+</script>

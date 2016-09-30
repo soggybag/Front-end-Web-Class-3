@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            body {
+                background-color: #eee;
+                font-family: Helvetica;
+                font-weight: 100;
+                font-size: 24px;
+                color: #777;
+            }
+            .tip-calculator {
+                width: 300px;
+                background-color: #ddd;
+                padding: 1em;
+                margin: 2em auto;
+            }
+            
+            .tip-calculator p {
+                
+            }
+            
+            .tip-p {
+                font-size: 18px;
+                line-height: 36px;
+            }
+            
+            .tip-calculator p:first-child {
+                margin-top: 0;
+            }
+            
+            .tip-calculator p:last-child {
+                margin-bottom: 0;
+            }
+            
+            .calc-input {
+                width: 200px;
+                height: 28px;
+                border: none;
+                border-bottom: 2px solid #aaa;
+                font-size: 24px;
+                background: transparent;
+                text-align: right;
+                float: right;
+                color: #000;
+            }
+            
+            input, button {
+                outline: none;
+            }
+            
+            .calc-input:focus {
+                border-bottom: cornflowerblue 2px solid;
+            }
+            
+            .tip-amount {
+                text-align: right;
+                color: #000;
+                padding-right: 10px;
+            }
+            
+            .tip-button {
+                border: none;
+                background: transparent;
+                font-size: 1em;
+                color: cornflowerblue;
+                text-align: center;
+                width: 100%;
+            }
+            
+            .tip-button:hover {
+                color: #4e7bcc;
+            }
+            
+            .tip-button:active {
+                color: #000;
+            }
+        </style>
+    </head>
+    
+    <body>
+        
+        <div class="tip-calculator">
+            <p class="tip-p">Total
+            <input class="calc-input" id="bill-total" type="number" step="0.01"></p>
+            
+            <p class="tip-p">Tip %
+            <input class="calc-input" id="tip-percent" type="number" step="1"></p>
+            
+            <p class="tip-amount">$<span id="the-tip" class="tip-amount">0.00</span></p>
+            <p><button class="tip-button" id="calculate-tip">Calculate</button></p>
+        </div>
+        
+        <script>
+            var calculateButton = document.getElementById("calculate-tip");
+            var billTotal = document.getElementById("bill-total");
+            var tipPercent = document.getElementById("tip-percent");
+            var theTip = document.getElementById("the-tip");
+            
+            calculateButton.addEventListener("click", function(event) {
+                var amount = billTotal.value;
+                var percent = tipPercent.value;
+                var tip = amount * percent / 100;
+                
+                console.log(amount, percent, tip);
+                
+                theTip.innerHTML = tip.toFixed(2);
+            });
+        </script>
+    </body>
+</html>

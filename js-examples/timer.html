@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            .timer {
+                height:243px;
+                width: 300px;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+            
+            .timer-display {
+                text-align: center;
+                font-family: Helvetica;
+                font-weight: bold;
+                font-size: 72px;
+                margin: 40px;
+                color: #aaa;
+            }
+            
+            .timer-button {
+                text-align: center;
+                font-family: Helvetica;
+                font-weight: 100;
+                font-size: 18px;
+                width: 60px;
+                height: 60px;
+                border: solid 1px #aaa;
+                border-radius: 50%;
+                margin: 10px;
+                background-color: #eee;
+                color: #aaa;
+            }
+            
+            .timer-controls {
+                width: 164px;
+                margin: auto;
+            }
+            
+            
+        </style>
+    </head>
+    
+    <body>
+        <div class="timer">
+            <div id="timer-display" class="timer-display">00:00</div>
+            <div class="timer-controls">
+                <button id="timer-start" class="timer-button">Start</button>
+                <button id="timer-reset" class="timer-button">Reset</button>
+            </div>
+        </div>
+        
+        <script>
+            var startButton = document.getElementById("timer-start");
+            var resetButton = document.getElementById("timer-reset");
+            var timerDisplay = document.getElementById("timer-display");
+            
+            var timer = "ready";
+            var time = 0;
+            
+            startButton.addEventListener("click", function(event){
+               console.log("Start!");
+                
+                if (timer != "ready") {
+                    clearInterval(timer);
+                    timer = "ready";
+                    startButton.innerHTML = "Start";
+                    return;
+                }
+                
+                startButton.innerHTML = "Pause";
+                timer = setInterval(function(){
+                    time += 1;
+                    var secs = time % 60;
+                    var mins = Math.floor(time / 60);
+                    if (secs < 10) {
+                        secs = "0" + secs;
+                    }
+                    
+                    if (mins < 10) {
+                        mins = "0" + mins;
+                    }
+                    
+                    timerDisplay.innerHTML = mins + ":" + secs;
+                }, 1000);
+            });
+            
+            resetButton.addEventListener("click", function(event){
+                console.log("Reset!");
+                startButton.innerHTML = "Start";
+                clearInterval(timer);
+                time = 0;
+                timer = "ready";
+                timerDisplay.innerHTML = "00:00";
+            });
+        </script>
+    </body>
+</html>
