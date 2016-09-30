@@ -1,16 +1,15 @@
 # Front-end Web: Lesson 3
 
-JavaScript an introduction
+JavaScript introduction
 
 ## Class objectives
 
 students will: 
 
-- Assess your knowledge of JavaScript
 - Write JavaScript practice syntax
-- Use the console and console.log() for fun and profit
-- Use getElementById(), value, innerHTML
-- Build simple programs using basic code and events
+- Use the console 
+- Reference an element by it's id name
+- Build simple programs 
 
 ## Schedule 
 
@@ -27,16 +26,30 @@ students will:
 
 ### 1 - What is JavaScript and where does it live? 
 
-JavaScript is most often used as a language that scripts the browser. As such it:
+JavaScript is a language that scripts the browser. 
 
-- Lives in the front end and is executed locally
+- Executes client side 
 - Is not compiled
-- Limited by what the browser 
+- Limited by the browser 
 
-Where does JavaScript live? You can write JavaScript in the `<script>` tag within an HTML page. Or, you can write 
-JavaScript in external files using the .js extension and link to these files with the `<script src="file.js">` tag. 
+Where does JavaScript live? You can write JavaScript in the `<script>` tag within an HTML page. 
+
+``` 
+<script>
+    // You JS code here...
+</script>
+```
+
+Or, you can write JavaScript in external files using the .js extension and link to these files 
+with the `<script src="file.js">` tag. 
+
+```
+<script src="your-js-file.js">
+```
 
 ### 2 - JavaScript in Action Demo
+
+Hello world with the console.
 
 - JavaScript basic syntax
 - Using the console and console.log(). 
@@ -45,11 +58,41 @@ JavaScript in external files using the .js extension and link to these files wit
 
 `console.log("Hello World")`
 
+__Concatenation__ 
+
+
+
+__If statements__
+
+
+
+__For loops__ 
+
+
+
+__functions__ 
+
+
+
 ### 3 - The DOM and ids
 
 Use the id attribute to identify tags for JavaScript. Id names should be unique and only appear __once per page__. 
 
 As a general rule of thumb always use class names for CSS, and id names for JavaScript. 
+
+__document.getElementById(idString)__
+
+Returns the first element in the DOM with idString.
+
+__element.innerHTML__
+
+Set or get the content (the string between an opening and closing tag) of a tag.
+
+__Math.floor(number)__
+
+Rounds down.
+
+__addEventListener(event, callBack)__
 
 #### Demo - Using document.getElementById()
 
@@ -74,6 +117,26 @@ Get the value from an input:
 `document.getElementById("my-input").value`
 
 `<input id="my-input" type="text">`
+
+__Important!__ If you JS references an element (tag) in the DOM you must make sure your code runs after those elements
+have loaded. This is common beginning pitfall. 
+
+```
+<!-- This example fails because script is run  before the div#a is loaded. -->
+<script>
+    document.getElementById("a").innerHTML = "Bar";
+</style>
+<div id="a">Foo</div>
+```
+
+
+```
+<!-- This example works because div#a is loaded before JS code that references #a -->
+<div id="a">Foo</div>
+<script>
+    document.getElementById("a").innerHTML = "Bar";
+</style>
+```
 
 ### 4 - Build a simple program tip calculator
 
