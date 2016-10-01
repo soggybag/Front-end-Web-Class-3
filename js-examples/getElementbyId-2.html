@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        
+        <p><input id="input-amount" type="number"></p>
+        <p><input id="input-percent" type="number"></p>
+        <p id="show-tip"></p>
+        <p><button id="calculate-button">Calculate</button></p>
+        
+        <!-- Remember the script needs to be at the bottom of the body tag -->
+        <script>
+            // Get a refernce to the elements above
+            var inputAmount = document.getElementById("input-amount");
+            var inputPercent = document.getElementById("input-percent");
+            var showTip = document.getElementById("show-tip");
+            var calculateButton = document.getElementById("calculate-button");
+            
+            // Listen for a click
+            calculateButton.addEventListener("click", function(event){
+                // Get the value
+                var amount = inputAmount.value;
+                var percent = inputPercent.value;
+                var tip = amount * percent / 100;
+                showTip.innerHTML = "$" + tip.toFixed(2);
+            });
+            
+            
+        </script>
+    </body>
+</html>
