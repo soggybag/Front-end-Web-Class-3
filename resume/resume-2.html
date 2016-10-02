@@ -1,0 +1,261 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Mitchell Hudson</title>
+    <style>
+        /* 
+            Some tips on creating clean typography that is easy to read. 
+            1) Pick a font that is easy to read. Generally San Serifs are better for the web.
+            2) Set the font size larger rather than smaller. 
+            3) Use good contrast, avoid harsh constrast.
+            4) Set the line to 1.5 as a good starting point.
+            5) Set vertical margin in multiples of the base font size.
+        */
+        
+        body {
+            /* Picking a font */
+            font-family: Helvetica;
+            font-size: 18px;
+            font-weight: 100;
+            color: #444;
+            line-height: 1.5em;
+            background-color: #efefef;
+        }
+        
+        .main {
+            width: 400px;
+            margin: auto;
+        }
+        
+        h1,
+        h2,
+        p,
+        .back-to-top,
+        ul.main-nav,
+        ul.skill-list {
+            margin-top: 0;
+            margin-bottom: 18px;
+        }
+        
+        .back-to-top {
+            margin-bottom: 36px;
+        }
+        
+        h1, .handle h2 {
+            color: #ffa39b;
+            transition: 1s ease-out;
+            user-select: none;
+            cursor: pointer;
+        }
+        
+        .handle.selected h2 {
+            color: #f0f;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #4193d4;
+        }
+        
+        a:hover {
+            color: #4daffc;
+        }
+        
+        .main-nav,
+        .main-nav li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: inline-block
+        }
+        
+        .main-nav li {}
+        
+        .skill-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .skill-list li::before {
+            content: '';
+            display: inline-block;
+            border: 1px solid #cdcdcd;
+            border-radius: 50%;
+            width: 12px;
+            height: 12px;
+            margin: 0 10px 0 0;
+        }
+        
+        .drawer {
+            max-height: 0;
+            overflow: hidden;
+            transition: 1s ease-out;
+        }
+        
+        .show {
+            max-height: 400px;
+        }
+    
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <article>
+            <div>
+                <header>
+                    <div class="title">
+                        <h1>Mitchell Hudson</h1>
+                    </div>
+                    <div>
+                        <nav>
+                            <ul class="main-nav">
+                                <li><a href="#personal">Personal</a></li>
+                                <li><a href="#ios-engineer">iOS Engineer</a></li>
+                                <li><a href="#instructor">Instructor</a></li>
+                                <li><a href="#freelance">Freelance</a></li>
+                                <li><a href="#art-design">Art &amp; Design</a></li>
+                                <li><a href="#my-work">My Work</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </header>
+            </div>
+
+
+            <div id="personal">
+                <section>
+                    <div class="handle">
+                        <header>
+                            <h2>Personal Information</h2>
+                        </header>
+                    </div>
+                    <div class="drawer">
+                        <address>
+                        <p>
+                            1710 40th Ave. San Francisco CA. 94122<br>
+                            415 564-6721, cell 415 505-9068<br>
+                            <a href="mailto:mitchell.d.hudson@gmail.com">mitchell.d.hudson@gmail.com</a>
+                        </p>
+                    </address>
+
+                        <div class="back-to-top"><a href="#">Return to top</a></div>
+                    </div>
+                </section>
+            </div>
+
+            <div id="ios-engineer">
+                <section>
+                    <div class="handle">
+                        <header>
+                            <h2>iOS Engineer</h2>
+                        </header>
+                    </div>
+                    <div class="drawer">
+                        <p>Published six apps to date in the iTunes App Store.</p>
+
+                        <div class="back-to-top"><a href="#">Return to top</a></div>
+                    </div>
+                </section>
+            </div>
+
+            <div id="instructor">
+                <section>
+                    <div class="handle">
+                        <header>
+                            <h2>Instructor</h2>
+                        </header>
+                    </div>
+                    <div class="drawer">
+                        <p>Two decades experience as an instructor for the Web Design and New Media (WNM) department at the Academy of Art University (AAU). Experience teaching large groups at the college level.</p>
+
+                        <p>Worked with graduate and undersgraduate students teaching them the fundementals of programming and software development. In various roles I authored course curriculum for range classes covering frontend and backend web development, and native iOS development.</p>
+
+                        <div class="back-to-top"><a href="#">Return to top</a></div>
+                    </div>
+                </section>
+            </div>
+
+            <div id="freelance">
+                <section>
+                    <div class="handle">
+                        <header>
+                            <h2>Freelance Experience</h2>
+                        </header>
+                    </div>
+                    <div class="drawer">
+                        <p>Worked on freelance web projects for clients such as the SFMOMA. Also created functional software proof of concepts for companies such LG mobile. Created custom in house enterprise tools for clients like Cisco Systems. My work as a freelancer has been about finding solutions to meet the needs of each individual client. The work produced has appeared on the front pages of high profile web pages, functional proof of concept demos and coorporate in house productivity tools. </p>
+
+                        <div class="back-to-top"><a href="#">Return to top</a></div>
+                    </div>
+                </section>
+            </div>
+
+            <div id="art-design">
+                <section>
+                    <div class="handle">
+                        <header>
+                            <h2>Art &amp; Design</h2>
+                        </header>
+                    </div>
+                    <div class="drawer">
+                        <p>I have a passion for design, and user experience and see it as having equal importance with programming in product development.</p>
+
+                        <p>Enjoy working with code. I see code as art and expression. I feel that no quality mobile experience can be created without a balancing outward design, and inner functionality.</p>
+
+                        <div class="back-to-top"><a href="#">Return to top</a></div>
+                    </div>
+                </section>
+            </div>
+
+            <div id="my-work">
+                <section>
+                    <div class="handle">
+                        <header>
+                            <h2>My Work</h2>
+                        </header>
+                    </div>
+                    <div class="drawer">
+                        <ul class="skill-list">
+                            <li><a href="https://itunes.apple.com/us/developer/mitchell-hudson/id951378720">iTunes App Store</a></li>
+                            <li><a href="https://github.com/soggybag">Github</a></li>
+                            <li><a href="https://www.youtube.com/user/webdevilsvideos/playlists">Youtube</a></li>
+                            <li><a href="www.linkedin.com/in/hudsonmitchell">LinkedIn</a></li>
+                            <li><a href="https://www.behance.net/mitchellhudson/wip">Behance</a></li>
+                        </ul>
+                        <div class="back-to-top"><a href="#">Return to top</a></div>
+                    </div>
+                </section>
+            </div>
+
+            <footer>
+                <p>Thanks for reading this all the way to the bottom.</p>
+            </footer>
+        </article>
+    </div>
+
+    <script>
+        var handles = document.getElementsByClassName("handle");
+        var drawers = document.getElementsByClassName("drawer");
+        
+        for (var i = 0; i < handles.length; i++) {
+            var handle = handles[i];
+            var drawer = drawers[i];
+            
+            handle.addEventListener("click", function(event) {
+                for (var i = 0; i < handles.length; i++) {
+                    handles[i].classList.remove("selected");
+                }
+                for (var i = 0; i < drawers.length; i++) {
+                    drawers[i].classList.remove("show");
+                }
+                this.nextElementSibling.classList.add("show");
+                this.classList.add("selected");
+            });
+        }
+    </script>
+</body>
+
+</html>
