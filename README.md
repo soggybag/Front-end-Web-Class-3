@@ -246,12 +246,44 @@ document.getElementById("fruit-select").value;
 
 Go crazy
 
-## 8 - 
+## 8 - Challenge
+
+Start with :
+
+[fruit.html](fruit.html)
+
+Use the select menu to display the paragraphs about fruit.  Write JavaScript that will show and hide the paragraphs . 
+
+Start  by logging the menu selection to the console. Use addEventListner("change") to detect a change. Log the 
+value of the select with selectElement.value. 
+
+You can hide and show the selected fruit by matching the id  to the value of  the select. 
+
+## 9 - Style Your work
+
+## 10 -  Style the timer
+
+## 11 -  Add more styles 
 
 ## Projects and Challenges
 
 Everything gets a better reception when it looks good, style your tip calculator. Pay attention to the font styles. 
 Think about the input field, you set the font, you can also set the border and padding (padding sets the space). 
+
+Resume project, use your resume as a project to practice with some of the JavaScript ideas covered here. 
+
+- Write your resume
+- Markup your resume
+    - Be sure to use semenatic markup choose tags that best describe the elements
+    - Use div tags to divide your resume into sections 
+    - Add class names and id's to the areas of your resume that will work with JavaScript
+- Style your resume
+    - Pay close attention typography. 
+        - Choose font that looks profesional
+        - Look closely at font size, line length and line height. Try and balance these to make your resume read well.
+        - Look at the color  of the type and background. Look for good constrast without getting too harsh. 
+- Use the ideas from this lesson to  hide and show areas of your resume
+
 
 ## Resources
 
