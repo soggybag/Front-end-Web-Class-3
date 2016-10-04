@@ -23,6 +23,9 @@ students will:
 |6  |10 min|55 | I do, we do| Adding and removing class names, Drawer |
 |7  |10 min|65 | Break      | Relax and plot your world take over |
 |8  |10 min|55 | Challenge  | Hiding and showing content |
+|9  |10 min|65 | TT         | Adding styles to the practice projects |
+|10 |20 min|75 | Work       | Style the timer |
+|11 |30 min|105| Work       | Style the calculator |
 
 ### 1 - What is JavaScript and where does it live? 
 
