@@ -25,7 +25,7 @@ students will:
 |8  |10 min|55 | Challenge  | Hiding and showing content |
 |9  |10 min|65 | TT         | Adding styles to the practice projects |
 |10 |20 min|75 | Work       | Style the timer |
-|11 |30 min|105| Work       | Style the calculator |
+|11 |30 min|105| Challenges | Solve the challenges |
 
 ### 1 - What is JavaScript and where does it live? 
 
@@ -245,6 +245,8 @@ document.getElementById("fruit-select").value;
 ```
 
 Go crazy
+
+## 8 - 
 
 ## Projects and Challenges
 
