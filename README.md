@@ -283,6 +283,7 @@ Resume project, use your resume as a project to practice with some of the JavaSc
         - Look closely at font size, line length and line height. Try and balance these to make your resume read well.
         - Look at the color  of the type and background. Look for good constrast without getting too harsh. 
 - Use the ideas from this lesson to  hide and show areas of your resume
+    -  Example: [resume/resume-2.html](resume/resume-2.html)
 
 
 ## Resources
