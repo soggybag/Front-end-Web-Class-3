@@ -46,9 +46,7 @@ Where does JavaScript live? You can write JavaScript in the `<script>` tag withi
 Or, you can write JavaScript in external files using the .js extension and link to these files 
 with the `<script src="file.js">` tag. 
 
-```
-<script src="your-js-file.js">
-```
+`<script src="your-js-file.js">`
 
 ### 2 - JavaScript in Action Demo
 
@@ -160,8 +158,7 @@ You can assign any type to any variable, no matter what the previouse type was. 
 
 ```
 var x = 10;
-
-...
+// ...
 x = "WTF!";
 ```
 
@@ -288,6 +285,7 @@ Resume project, use your resume as a project to practice with some of the JavaSc
 
 ## Resources
 
+- [Front End Web Playlist](https://goo.gl/z5fGaR) Watch videos 8 - 12
 - [http://eloquentjavascript.net](http://eloquentjavascript.net)
 
 
